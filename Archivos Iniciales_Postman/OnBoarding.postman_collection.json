@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "85058dbb-a2b9-437b-9d5f-5871ea8c40b2",
+		"name": "OnBoarding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15088039"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "ListarClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:64393/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:64393/clientes/1314957281",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"clientes",
+								"1314957281"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identificacion\": \"1314957281\",\r\n  \"nombres\": \"string\",\r\n  \"apellidos\": \"string\",\r\n  \"edad\": 2147483647,\r\n  \"fechaNacimiento\": \"2022-10-04T14:06:50.489Z\",\r\n  \"direccion\": \"string\",\r\n  \"telefono\": \"string\",\r\n  \"estadoCivil\": \"string\",\r\n  \"identificacionConyuge\": \"stringstri\",\r\n  \"nombreConyuge\": \"string\",\r\n  \"sujetoCredito\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:64393/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:64393/clientes/22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"clientes",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clienteId\": 1,\r\n    \"identificacion\": \"1314957281\",\r\n    \"nombres\": \"Anderson Gustavo\",\r\n    \"apellidos\": \"Morrillo Cedeño\",\r\n    \"edad\": 28,\r\n    \"fechaNacimiento\": \"1994-07-15T00:00:00\",\r\n    \"direccion\": \"Direccion1\",\r\n    \"telefono\": \"0981160765\",\r\n    \"estadoCivil\": \"2\",\r\n    \"identificacionConyuge\": \"\",\r\n    \"nombreConyuge\": \"\",\r\n    \"sujetoCredito\": true\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:64393/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "vehiculos",
+			"item": [
+				{
+					"name": "ObtenerVehiculos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:64393/vehiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"vehiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerVehiculoPorPLaca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:64393/vehiculos/pcq4586",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"vehiculos",
+								"pcq4586"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarVehiculo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"placa\": \"PDJ6849\",\r\n  \"modelo\": \"HAVAL M4\",\r\n  \"numeroChasis\": \"1221juiyu12\",\r\n  \"marcaId\": 5,\r\n  \"tipo\": \"SUV\",\r\n  \"cilindraje\": \"1600\",\r\n  \"avaluo\": 15.500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:64393/vehiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"vehiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"vehiculoId\": 1,\r\n        \"placa\": \"PCQ4586\",\r\n        \"modelo\": \"CX5\",\r\n        \"numeroChasis\": \"3232dsdsd\",\r\n        \"marcaId\": 1,\r\n        \"tipo\": \"SUV\",\r\n        \"cilindraje\": \"2000\",\r\n        \"avaluo\": 22.500\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:64393/vehiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"vehiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:64393/vehiculos/1002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"vehiculos",
+								"1002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "solicitudes",
+			"item": [
+				{
+					"name": "ObtenerSolicitudes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:64393/solicitudes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"solicitudes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarSolicitud",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clienteId\": 1,\r\n    \"patioId\": 2,\r\n    \"vehiculoId\": 1,\r\n    \"ejecutivoId\": 1,\r\n    \"fechaSolicitud\": \"2022-10-03T00:00:00\",\r\n    \"mesesPlazo\": 60,\r\n    \"cuotas\": 350,\r\n    \"entrada\": 10,\r\n    \"estadoSolicitud\": \"Registrada\",\r\n    \"observacion\": \"Cliente VIP\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:64393/solicitudes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "64393",
+							"path": [
+								"solicitudes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
